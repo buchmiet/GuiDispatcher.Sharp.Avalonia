@@ -1,0 +1,29 @@
+# Changelog
+
+All notable changes to this project will be documented in this file.
+
+The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
+and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
+
+## [Unreleased]
+
+## [1.0.3] - 2026-07-01
+
+### Changed
+
+- Switched releases to a git-tag-triggered flow (`vX.Y.Z`) instead of publishing on every push to `main`. The `Publish NuGet` workflow now validates that the `.csproj` version and the tag match, and that `CHANGELOG.md` has a corresponding entry, before packing and pushing to NuGet.
+- Raised the `GuiDispatcher.Sharp` dependency floor to `[1.0.2,2.0.0)`, matching the tag-triggered release of the core package.
+
+## [1.0.2] - 2026-07-01
+
+### Changed
+
+- Raised the `GuiDispatcher.Sharp` dependency floor to `[1.0.1,2.0.0)`.
+
+## [1.0.1] - 2026-07-01
+
+### Added
+
+- Initial release of `GuiDispatcher.Sharp.Avalonia`.
+- `AvaloniaGuiDispatcher`: `IGuiDispatcher` backed by `Avalonia.Threading.Dispatcher.UIThread`.
+- `AvaloniaGuiTimer`: `IGuiTimer` implementation for Avalonia.
