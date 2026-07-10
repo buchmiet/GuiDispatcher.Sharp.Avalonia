@@ -1,12 +1,14 @@
 # GuiDispatcher.Sharp.Avalonia
 
-Avalonia implementation for `GuiDispatcher.Sharp`.
+Avalonia 12 implementation of [GuiDispatcher.Sharp](https://www.nuget.org/packages/GuiDispatcher.Sharp) for **.NET 10**.
 
 ## Install
 
 ```xml
-<PackageReference Include="GuiDispatcher.Sharp.Avalonia" Version="1.0.*" />
+<PackageReference Include="GuiDispatcher.Sharp.Avalonia" Version="1.1.*" />
 ```
+
+This package pulls in `GuiDispatcher.Sharp` (`1.1.0` or later) and `Avalonia` (`12.1.0`).
 
 Or via CLI:
 
@@ -15,6 +17,11 @@ dotnet add package GuiDispatcher.Sharp.Avalonia
 ```
 
 Versioning follows [Semantic Versioning](https://semver.org/). Releases are cut by pushing a `vX.Y.Z` git tag; see [CHANGELOG.md](CHANGELOG.md) for release history.
+
+## Requirements
+
+- .NET 10 (`net10.0`)
+- Avalonia 12.1+
 
 ## NuGet publishing
 
@@ -43,6 +50,7 @@ The `Publish NuGet` workflow only runs on `vX.Y.Z` tag pushes, and will fail unl
 ```csharp
 using GuiDispatcher.Sharp;
 using GuiDispatcher.Sharp.Avalonia;
+using GuiDispatcher.Sharp.Contracts;
 
 services.AddSingleton<IGuiDispatcher, AvaloniaGuiDispatcher>();
 ```
