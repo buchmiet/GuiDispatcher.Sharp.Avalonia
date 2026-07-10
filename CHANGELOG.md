@@ -7,6 +7,16 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [1.1.0] - 2026-07-10
+
+### Changed
+
+- Target framework is now `net10.0` (dropped `net8.0`).
+- Avalonia dependency updated to `12.1.0`.
+- `GuiDispatcher.Sharp` dependency floor raised to `[1.1.0,2.0.0)`.
+- Removed `sealed` from public types.
+- Argument validation uses `ArgumentNullException.ThrowIfNull`.
+
 ## [1.0.3] - 2026-07-01
 
 ### Changed

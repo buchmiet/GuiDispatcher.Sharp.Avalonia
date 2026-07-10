@@ -1,23 +1,28 @@
-using GuiDispatcher.Sharp;
+using Avalonia.Threading;
+using GuiDispatcher.Sharp.Contracts;
 
 namespace GuiDispatcher.Sharp.Avalonia;
 
 /// <summary>Dispatcher timer backed by Avalonia's <see cref="DispatcherTimer"/>.</summary>
-public sealed class AvaloniaGuiTimer : IGuiTimer
+public class AvaloniaGuiTimer : IGuiTimer
 {
-    private readonly global::Avalonia.Threading.DispatcherTimer _timer;
+    private readonly DispatcherTimer _timer;
 
+    /// <summary>Creates a timer on the UI thread with the given interval.</summary>
+    /// <param name="interval">Tick interval. Must be greater than or equal to zero.</param>
     public AvaloniaGuiTimer(TimeSpan interval)
     {
         if (interval < TimeSpan.Zero)
             throw new ArgumentOutOfRangeException(nameof(interval), "Interval must be greater than or equal to zero.");
 
-        _timer = new global::Avalonia.Threading.DispatcherTimer { Interval = interval };
+        _timer = new DispatcherTimer { Interval = interval };
         _timer.Tick += OnTick;
     }
 
+    /// <inheritdoc />
     public event EventHandler? Tick;
 
+    /// <inheritdoc />
     public TimeSpan Interval
     {
         get => _timer.Interval;
@@ -30,16 +35,20 @@ public sealed class AvaloniaGuiTimer : IGuiTimer
         }
     }
 
+    /// <inheritdoc />
     public bool IsEnabled
     {
         get => _timer.IsEnabled;
         set => _timer.IsEnabled = value;
     }
 
+    /// <inheritdoc />
     public void Start() => _timer.Start();
 
+    /// <inheritdoc />
     public void Stop() => _timer.Stop();
 
+    /// <inheritdoc />
     public void Dispose()
     {
         _timer.Stop();

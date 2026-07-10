@@ -1,15 +1,15 @@
-<Project Sdk="Microsoft.NET.Sdk">
+﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
-    <TargetFramework>net8.0</TargetFramework>
+    <TargetFramework>net10.0</TargetFramework>
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
     <RootNamespace>GuiDispatcher.Sharp.Avalonia</RootNamespace>
 
     <PackageId>GuiDispatcher.Sharp.Avalonia</PackageId>
-    <Version>1.0.3</Version>
+    <Version>1.1.0</Version>
     <Authors>Lukasz Buchmiet</Authors>
-    <Description>Avalonia implementation for GuiDispatcher.Sharp.</Description>
+    <Description>Avalonia 12 implementation of GuiDispatcher.Sharp for .NET 10.</Description>
     <PackageTags>dispatcher;ui;gui;thread;timer;avalonia</PackageTags>
     <PackageLicenseExpression>MIT</PackageLicenseExpression>
     <PackageReadmeFile>README.md</PackageReadmeFile>
@@ -19,8 +19,8 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="Avalonia" Version="12.0.2" />
-    <PackageReference Include="GuiDispatcher.Sharp" Version="[1.0.2,2.0.0)" />
+    <PackageReference Include="Avalonia" Version="12.1.0" />
+    <PackageReference Include="GuiDispatcher.Sharp" Version="[1.1.0,2.0.0)" />
   </ItemGroup>
 
   <ItemGroup>
