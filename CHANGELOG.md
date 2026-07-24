@@ -18,6 +18,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ### Changed
 
 - Excluded test sources, assets, and Avalonia XAML from the adapter project and package.
+- Raised the `GuiDispatcher.Sharp` dependency floor to `[1.1.1,2.0.0)` for
+  coordinated family releases.
 
 ## [1.1.0] - 2026-07-10
 

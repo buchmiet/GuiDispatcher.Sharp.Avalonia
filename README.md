@@ -8,7 +8,8 @@ Avalonia 12 implementation of [GuiDispatcher.Sharp](https://www.nuget.org/packag
 <PackageReference Include="GuiDispatcher.Sharp.Avalonia" Version="1.1.*" />
 ```
 
-This package pulls in `GuiDispatcher.Sharp` (`1.1.0` or later) and `Avalonia` (`12.1.0`).
+This package pulls in `GuiDispatcher.Sharp` (`1.1.1` or later, below `2.0.0`)
+and `Avalonia` (`12.1.0`).
 
 Or via CLI:
 
@@ -44,6 +45,9 @@ The `Publish NuGet` workflow only runs on `vX.Y.Z` tag pushes, and will fail unl
 2. Move the relevant `[Unreleased]` entries in `CHANGELOG.md` into a new `## [X.Y.Z] - YYYY-MM-DD` section.
 3. Commit both changes.
 4. Tag and push: `git tag vX.Y.Z && git push origin vX.Y.Z` — this triggers the publish workflow.
+
+For a coordinated release of the complete package family, follow the
+[family release guide](https://github.com/buchmiet/GuiDispatcher.Sharp/blob/main/RELEASING_FAMILY.md).
 
 ## Usage
 
