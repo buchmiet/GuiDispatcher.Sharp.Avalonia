@@ -7,6 +7,18 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [1.1.1] - 2026-07-24
+
+### Added
+
+- Dispatcher and timer integration tests running on Avalonia's headless UI thread.
+- Regression coverage ensuring `InvokeAsync(Func<Task>)` remains asynchronous and awaits the inner task.
+- Test execution as a required step of the NuGet publishing workflow.
+
+### Changed
+
+- Excluded test sources, assets, and Avalonia XAML from the adapter project and package.
+
 ## [1.1.0] - 2026-07-10
 
 ### Changed

@@ -48,6 +48,9 @@ jobs:
       - name: Build
         run: dotnet build GuiDispatcher.Sharp.Avalonia.csproj --configuration Release --no-restore
 
+      - name: Test
+        run: dotnet test tests/GuiDispatcher.Sharp.Avalonia.Tests/GuiDispatcher.Sharp.Avalonia.Tests.csproj --configuration Release --verbosity normal
+
       - name: Show package version
         run: |
           echo "Package version: $VERSION"
