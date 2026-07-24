@@ -20,7 +20,7 @@
 
   <ItemGroup>
     <PackageReference Include="Avalonia" Version="12.1.0" />
-    <PackageReference Include="GuiDispatcher.Sharp" Version="[1.1.0,2.0.0)" />
+    <PackageReference Include="GuiDispatcher.Sharp" Version="[1.1.1,2.0.0)" />
   </ItemGroup>
 
   <ItemGroup>
