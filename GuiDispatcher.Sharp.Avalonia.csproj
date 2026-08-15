@@ -7,7 +7,7 @@
     <RootNamespace>GuiDispatcher.Sharp.Avalonia</RootNamespace>
 
     <PackageId>GuiDispatcher.Sharp.Avalonia</PackageId>
-    <Version>1.1.1</Version>
+    <Version>1.1.2</Version>
     <Authors>Lukasz Buchmiet</Authors>
     <Description>Avalonia 12 implementation of GuiDispatcher.Sharp for .NET 10.</Description>
     <PackageTags>dispatcher;ui;gui;thread;timer;avalonia</PackageTags>
@@ -19,8 +19,8 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="Avalonia" Version="12.1.0" />
-    <PackageReference Include="GuiDispatcher.Sharp" Version="[1.1.1,2.0.0)" />
+    <PackageReference Include="Avalonia" Version="12.1.1" />
+    <PackageReference Include="GuiDispatcher.Sharp" Version="[1.1.2,2.0.0)" />
   </ItemGroup>
 
   <ItemGroup>

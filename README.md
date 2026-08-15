@@ -8,8 +8,8 @@ Avalonia 12 implementation of [GuiDispatcher.Sharp](https://www.nuget.org/packag
 <PackageReference Include="GuiDispatcher.Sharp.Avalonia" Version="1.1.*" />
 ```
 
-This package pulls in `GuiDispatcher.Sharp` (`1.1.1` or later, below `2.0.0`)
-and `Avalonia` (`12.1.0`).
+This package pulls in `GuiDispatcher.Sharp` (`1.1.2` or later, below `2.0.0`)
+and `Avalonia` (`12.1.1`).
 
 Or via CLI:
 
